@@ -1,3 +1,45 @@
+const categories = {
+  airports: {
+    name: "Airports",
+    words: [
+      { it: "biglietto", en: "ticket" },
+      { it: "passaporto", en: "passport" },
+      { it: "bagaglio", en: "luggage" },
+      { it: "imbarco", en: "boarding" },
+      { it: "uscita", en: "exit" }
+    ],
+    scenarios: [
+      {
+        title: "Checking in",
+        dialogue: [
+          { speaker: "Staff", text: "Buongiorno, il suo passaporto per favore." },
+          { speaker: "You", text: "Ecco il mio passaporto." }
+        ]
+      }
+    ]
+  },
+  hotels: {
+    name: "Hotels",
+    words: [
+      { it: "prenotazione", en: "reservation" },
+      { it: "chiave", en: "key" },
+      { it: "camera", en: "room" },
+      { it: "colazione", en: "breakfast" },
+      { it: "ascensore", en: "elevator" }
+    ],
+    scenarios: [
+      {
+        title: "Checking in",
+        dialogue: [
+          { speaker: "You", text: "Buonasera, ho una prenotazione a nome Samil." },
+          { speaker: "Staff", text: "Perfetto, la sua camera è la 305." }
+        ]
+      }
+    ]
+  },
+  // add public_transport, restaurants, museums, friends...
+};
+
 // Use the categories object defined earlier
 let currentCategoryKey = null;
 let currentWordIndex = 0;
