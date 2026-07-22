@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Italian Travel Companion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Italian Travel Companion</h1>
+    <p>Learn essential Italian for your trip to Italy.</p>
+  </header>
+
+  <main>
+    <section id="category-select">
+      <h2>Select a category</h2>
+      <div id="categories"></div>
+    </section>
+
+    <section id="learning" class="hidden">
+      <h2 id="learning-title"></h2>
+      <div id="word-display"></div>
+      <button id="prev-word">Previous</button>
+      <button id="next-word">Next</button>
+      <button id="start-quiz">Start Quiz</button>
+    </section>
+
+    <section id="quiz" class="hidden">
+      <h2>Quiz</h2>
+      <div id="quiz-question"></div>
+      <div id="quiz-options"></div>
+      <button id="submit-answer">Submit</button>
+      <div id="quiz-feedback"></div>
+    </section>
+
+    <section id="scenarios" class="hidden">
+      <h2>Conversational Scenarios</h2>
+      <div id="scenario-list"></div>
+      <div id="scenario-dialogue"></div>
+    </section>
+
+    <section id="ai-agent" class="hidden">
+      <h2>Practice with the AI Agent</h2>
+      <div id="agent-log"></div>
+      <input id="agent-input" placeholder="Write your Italian or English here..." />
+      <button id="agent-send">Send</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
